@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MegaTrends Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1 id="megaHEAD">MegaTrends Generator</h1>
+					<p id="megaWALL">crossing the chasm</p>
+				</header>
+				<p>
+					<a id="verwechslungsgefahr" href="#" class="button style2">Verwechslungsgefahr?</a>
+					<a id="rache" href="#" class="button style2">Es wird sich rächen!</a>
+					<a id="schnee" href="#" class="button style2">Schnee von gestern...</a>
+					<a id="dieAnderen" href="#" class="button style2">Über den Tellerrand</a>
+				</p>
+				<p>
+					<br/><a id="3horzions" href="three-horizons.html">Hintergrund: "Legacy Code" vs. "Grüne Wiese" oder, das Drei-Horizonte-Modell</a>
+				</p>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			var megatrends = ["Gender Shift", "Ungendered Lifestyle", "Proll Professionals", "Post Gender Marketing", "Progressive Parents", "LGBTQ", "Sex-Design", "Diversity", "Womanomics", "Work-Life-Blending", "New Feminism", "New Work", "Coopetition", "Start-up Culture", "Kreativ-Ökonomie", "Internet of Things", "Kollaboration", "Gig Economy", "Talentismus", "Co-Working", "Open Innovation", "Digital Literacy", "Corporate Health", "Service-Ökonomie", "Urban Manufactoring", "Business Ecosystems", "Blockchain", "Social Business", "Permanent Beta", "Plattform-Ökologie", "Neo-Ökologie", "Bio-Boom", "Sharing Economy", "Slow Culture", "Gutbürger", "Lebensqualität", "Achtsamkeit", "Flexitarier", "Green Tech", "Direct Trade", "Postwachstumsökonomie", "Zero Waste", "Urban Farming", "Circular Economy", "E-Mobility", "Post-Carbon-Gesellschaft", "Minimalismus", "Sinn-Ökomonie", "Silver Society", "Universal Design", "Forever Youngsters", "Post-Demographie", "Digital Health", "Lifelong Learning", "Un-Ruhestand", "Golden Mentor", "Downaging", "Free Ager", "Individualisierung", "Multigraphie", "Neo-Tribes", "Alltags-Outsourcing", "Single-Gesellschaft", "Self-Balancer", "Resonanzgesellschaft", "Mass Customization", "Do It Yourself", "Identitätsmanagement", "Hygge", "Trust Technology", "Transparenz-Märkte", "Gesundheit", "Preventive Health", "Holistic Health", "Komplementärmedizin", "Movement Culture", "Mind-Sport", "Sportivity", "Self-Tracking", "Health Literacy", "Big Data", "Healing Architecture", "Bike-Boom", "Healthy Hedonism", "Detoxing", "Globalisierung", "Multipolare Weltordnung", "Bevölkerungswachstum", "Nearshoring", "Global Cities", "Generation Global", "Neo-Nationalismus", "Global Migration", "Glokalisierung", "Sicherheit", "Transparent-Märkte", "Trust-Techology", "Cybercrime", "Smart City", "Digital Reputation", "Predictive Analytics", "Privacy", "Autonomes Fahren", "Felxicurity", "Super-Safe-Society", "Simplexity", "Urbanisierung", "Micro Housing", "Condended Spaces", "Co-Living", "Health Architecture", "Bike Boom", "Third Places", "Megacities", "Progessive Provinz", "Rural City", "Mobilität", "De-Touristification", "Moderne Nomaden", "Omni-Channeling", "Seamless Mobility", "Carsharing", "Unterwegs-Märkte", "Mikromobilität", "Dash Delivery", "24/7-Gesellschaft", "Wissenskultur", "Edutainment", "Learning Analytics", "Digital Creatives", "Crowdsourcing", "Playfulness", "Bildungsbusiness", "Open Knowledge", "Augumented Learning", "Konnektivität", "Künstliche Intelligenz", "3D-Printing", "Cryptocurrencies", "Augumented Reality", "Real-Digital", "Smart Devices", "Omline", "Social Networks"];
+		
+			function getHotShit() {
+				return "<span style='color:orange;'>" + megatrends[Math.floor((Math.random()*megatrends.length))] + "</span>";
+			}
+		
+			$( "#verwechslungsgefahr" ).click(function() {
+				var megaInsight = "Wir dürfen auf keinen Fall " + getHotShit() + " mit " + getHotShit() + " verwechseln!!!";
+				$( "#megaWALL" ).html(megaInsight);
+			});
+			$( "#rache" ).click(function() {
+				var megaInsight = "Wenn wir " + getHotShit() + " außeracht lassen, wird sich das rächen. Spätestens wenn " + getHotShit() + " kommt!";
+				$( "#megaWALL" ).html(megaInsight);
+			});
+			$( "#schnee" ).click(function() {
+				var megaInsight = getHotShit() + " ist Schnee von Gestern! The Next big Thing ist " + getHotShit() + "!";
+				$( "#megaWALL" ).html(megaInsight);
+			});
+			$( "#dieAnderen" ).click(function() {
+				var megaInsight = "Nur weil alle anderen " + getHotShit() + " machen, müssen wir noch lange nicht in " + getHotShit() + " investieren.";
+				$( "#megaWALL" ).html(megaInsight);
+			});
+		</script>
+	</body>
+</html>
